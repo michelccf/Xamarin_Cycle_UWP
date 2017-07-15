@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CycleApp.Views.SplashScreenLogo"
+             xmlns:Common="clr-namespace:CycleApp"
+             BackgroundColor="{x:Static Common:Palette._allBackground}">
+
+          <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="stack">
+            <Image Source="logo.png" x:Name="Cycle" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+            <Label TextColor="{x:Static Common:Palette._defaultGreen}" FontSize="45" XAlign="Center">Cycle</Label>
+          </StackLayout>
+  
+</ContentPage>

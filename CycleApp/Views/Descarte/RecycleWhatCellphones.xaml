@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CycleApp.Views.Descarte.RecycleWhatCellphones"
+             xmlns:Common="clr-namespace:CycleApp"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             BackgroundColor="{x:Static Common:Palette._allBackground}"
+             NavigationPage.BarTextColor="{x:Static Common:Palette._defaultGreen}"
+             NavigationPage.BarBackgroundColor="{x:Static Common:Palette._MenuWhite}"
+             Title="Cycle - Descarte"
+             Icon="tabicon.png">
+
+  <ContentPage.Content>
+    <StackLayout>
+
+      <StackLayout HorizontalOptions="Center" Margin="0, 15, 0, 0">
+        <Label TextColor="{x:Static Common:Palette._defaultGreen}" FontSize="20">O que você deseja descartar?</Label>
+      </StackLayout>
+
+      <Grid HorizontalOptions="CenterAndExpand"
+         VerticalOptions="CenterAndExpand"
+         ColumnSpacing="60"
+         RowSpacing="10">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="70"/>
+          <RowDefinition Height="70"/>
+          <RowDefinition Height="70"/>
+          <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="70"/>
+          <ColumnDefinition Width="70"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Primeira Linha de imagens-->
+        <Image x:Name="Outros" Source="celular.png"
+               HorizontalOptions="Fill"
+               HeightRequest="66"
+               WidthRequest="66"
+               Grid.Row="0"
+               Grid.Column="0"/>
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="Outros"
+               TextColor="{x:Static Common:Palette._defaultGreen}"
+               Grid.Row="1"
+               Grid.Column="0"/>
+
+
+        <Image x:Name="Iphone" Source="iphone.png"
+               HorizontalOptions="Fill"
+               HeightRequest="66"
+               WidthRequest="66"
+               Grid.Row="0"
+               Grid.Column="1"/>
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="Iphone"
+               TextColor="{x:Static Common:Palette._defaultGreen}"
+               Grid.Row="1"
+               Grid.Column="1"/>
+        <!--FIM Primeira Linha de imagens-->
+
+        <!--Segunda Linha de imagens-->
+        <Image x:Name="Android" Source="androidPhone.png"
+               HorizontalOptions="Fill"
+               HeightRequest="66"
+               WidthRequest="66"
+               Grid.Row="3"
+               Grid.Column="0"/>
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="Android"
+               TextColor="{x:Static Common:Palette._defaultGreen}"
+               Grid.Row="4"
+               Grid.Column="0"/>
+
+
+        <Image x:Name="Winphone" Source="Windows.png"
+               HorizontalOptions="Fill"
+               HeightRequest="66"
+               WidthRequest="66"
+               Grid.Row="3"
+               Grid.Column="1"/>
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="Windows Phone"
+               TextColor="{x:Static Common:Palette._defaultGreen}"
+               Grid.Row="4"
+               Grid.Column="1"/>
+        <!--FIM Segunda linha de imagens-->
+      </Grid>
+
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CycleApp.Views.Descarte.WantRecycle"
+             xmlns:Common="clr-namespace:CycleApp"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             Title="Descarte" Icon="descarte.png">
+
+
+
+
+
+
+
+  <!--<controls:CircleImage HeightRequest="75" WidthRequest="100" HorizontalOptions="Fill" Aspect="AspectFill">
+      <controls:CircleImage.Source>
+        <OnPlatform x:TypeArguments="ImageSource">
+          <OnPlatform.iOS>
+            <FileImageSource File="panic.jpg" />
+          </OnPlatform.iOS>
+          <OnPlatform.Android>
+            <FileImageSource File="panic.jpg" />
+          </OnPlatform.Android>
+          <OnPlatform.WinPhone>
+            <FileImageSource File="Images/panic.jpg" />
+          </OnPlatform.WinPhone>
+        </OnPlatform>
+      </controls:CircleImage.Source>
+    </controls:CircleImage>-->
+  <ContentPage.Content>
+
+     <StackLayout>
+
+      <StackLayout HorizontalOptions="Center" Margin="0, 15, 0, 0">
+        <Label TextColor="{x:Static Common:Palette._defaultGreen}" FontSize="20">O que você deseja descartar?</Label>
+      </StackLayout>
+      
+        <Grid HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand"
+           ColumnSpacing="60">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="70"/>
+          </Grid.ColumnDefinitions>
+
+          <Image x:Name="Celular" Source="celular.png"
+                 HorizontalOptions="Fill"
+                 HeightRequest="66"
+                 WidthRequest="66"
+                 Grid.Row="0"
+                 Grid.Column="0"/>
+            <!--<Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding CellphoneTapped}">
+              </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+            
+          </Image>-->
+
+          <Label HorizontalOptions="Center"
+                 HorizontalTextAlignment="Center"
+                 Text="Celular"
+                 TextColor="{x:Static Common:Palette._defaultGreen}"
+                 Grid.Row="1"
+                 Grid.Column="0"/>
+
+
+          <Image x:Name="Tablet" Source="tabletApple.png"
+                 HorizontalOptions="Fill"
+                 HeightRequest="66"
+                 WidthRequest="66"
+                 Grid.Row="0"
+                 Grid.Column="1">
+            <Image.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding TabletTapped}">
+              </TapGestureRecognizer>
+            </Image.GestureRecognizers>
+
+          </Image>
+
+          <Label HorizontalOptions="Center"
+                 HorizontalTextAlignment="Center"
+                 Text="Tablet"
+                 TextColor="{x:Static Common:Palette._defaultGreen}"
+                 Grid.Row="1"
+                 Grid.Column="1"/>
+        </Grid>
+     
+      </StackLayout>
+    
+  
+
+  </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Custom:ExtendedTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CycleApp.Views.MainMenu"
+             xmlns:Common="clr-namespace:CycleApp"
+             xmlns:Custom="clr-namespace:XLabs.Forms.Controls"
+             xmlns:Descarte="clr-namespace:CycleApp.Views.Descarte"
+             BackgroundColor="{x:Static Common:Palette._allBackground}"
+             BarBackgroundColor="{x:Static Common:Palette._MenuWhite}">
+  <TabbedPage.Children>
+    
+    <Descarte:WantRecycle/>
+
+    <ContentPage Title="Enviar" Icon="delivery_filled.png">
+
+    </ContentPage>
+    <ContentPage Title="Coletar" Icon="coletar.png">
+
+    </ContentPage>
+    <ContentPage Title="Perfil" Icon="perfil.png">
+
+    </ContentPage>
+    <ContentPage Icon="configuracoesM.png">
+
+    </ContentPage>
+  </TabbedPage.Children>
+
+</Custom:ExtendedTabbedPage>
